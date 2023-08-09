@@ -1,0 +1,41 @@
+/* 
+==UserStyle==
+    @name         Kick Light Theme
+    @description  A quickly-made light theme for the Kick Interface
+    @namespace    gabuch2.kick-lighttheme
+    @version      1.0.0
+    @author       gabuch2 (https://github.com/gabuch2)
+    @homepageURL  https://github.com/gabuch2/kick-lighttheme/
+    @supportURL   https://github.com/gabuch2/kick-lighttheme/issues
+    @updateURL    https://raw.githubusercontent.com/gabuch2/kick-lighttheme/main/KickTV-LightTheme.user.css
+    @license      AGPL-3
+==/UserStyle==
+*/
+
+/* Change navbar to pitch black before inversion */
+.main-navbar {
+    background-color: #000 !important;
+}
+
+/* Invert the entire website */
+body {
+    filter: invert(100%) !important;
+    -webkit-filter: invert(100%) !important;
+}
+
+/* Revert inversion for specific elements (video player, images, avatars, emotes, etc) */
+img, video {
+    filter: invert(100%) !important;
+    -webkit-filter: invert(100%) !important;
+}
+
+/* Revert inversion for emojis in SVG elements (7TV support) */
+svg[class*="emoji"] {
+    filter: invert(100%) !important;
+    -webkit-filter: invert(100%) !important;
+}
+
+div[class*="emoji-group"] {
+    filter: invert(100%) !important;
+    -webkit-filter: invert(100%) !important;
+}
